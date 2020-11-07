@@ -1,0 +1,184 @@
+@media (max-width: 600 px) {
+  body { 
+    padding-top: 200px; 
+    padding-bottom: 100px;
+    background-repeat: no-repeat; 
+  }
+}
+
+body {
+  background-image: url("../Images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#Header a:hover {
+  color: #FFF;
+}
+
+#About span {
+
+padding: 10px 20px 10px 20px;
+
+}
+
+#About hr {
+    border-width: 3px;
+    margin-top: 6px;
+}
+
+#About .fab
+{
+  color: white;
+}
+
+div .a {
+  padding: 10px 20px 10px 20px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+#quote1 {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 36px;
+}
+
+#quote1 p {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 58px;
+}
+
+div .sincerely {
+  padding: 10px 20px 10px 20px;
+}
+
+#Skills span 
+{
+
+  padding: 10px 20px 10px 20px;
+  
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+
+#Skills hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+#Education span 
+{
+
+  padding: 10px 20px 10px 20px;
+  
+}
+
+
+#Education hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+
+#Education .card 
+{
+
+  border-top: 03px solid rgb(21, 190, 167);
+
+}
+
+#Experience span 
+{
+
+  padding: 10px 20px 10px 20px;
+  
+}
+
+
+#Experience hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+
+#Experience .card 
+{
+
+  border-top: 03px solid red;
+
+}
+#Contact span 
+{
+
+  padding: 10px 20px 10px 20px;
+  
+}
+
+
+#Contact hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+
+#Visits span 
+{
+
+  padding: 10px 20px 10px 20px;
+  
+}
+
+
+#Visits hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+
+        #myCarousel .Slideshow {
+          text-align: center;
+          margin-bottom: 175px;
+        }
+
+        #myCarousel .carousel-inner {
+          padding-top: 5%;
+          padding-left: 10%;
+          padding-right: 10%;
+        }        
+        #myCarousel .carousel-item {
+            height: 32rem;
+            background: #000;
+            color: white;
+            position : relative;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        #myCarousel .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+        #myCarousel .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+.footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 1.5rem;  
+  text-align: center;
+  left: 0px;
+  
+}

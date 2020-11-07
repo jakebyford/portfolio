@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" a href="css/bootstrap.css"/>
+  <link rel="stylesheet" a href="css/fonts.css"/>
+  <link rel="stylesheet" href= "mystyle.css"/>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <script src="js/bootstrapjquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/proper.js"></script>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>My Portfolio Website</title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  <style>      
+    body{
+        padding-top:200px;
+    }
+    /* fix padding under menu after resize */
+    @media screen and (max-width: 767px) {
+        body { padding-top: 200px; 
+               padding-bottom: 100px;
+               background-repeat:no-repeat; }
+    }
+    @media screen and (min-width:768px) and (max-width: 991px) {
+        body { padding-top: 200px;
+               padding-bottom: 100px; 
+               background-repeat:no-repeat; }
+    }
+    @media screen and (min-width: 992px) {
+        body { padding-top: 200px;
+               padding-bottom: 100px; 
+               background-repeat:no-repeat;}
+    }
+</style>
+
+
+
+    <!--Navbar-->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a href="#" class="navbar-brand"><h3>Portfolio</h3></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                  <a href="#About" class ="nav-link">About Me</a>
+                  <a href="#Education" class ="nav-link">Education</a>
+                  <a href="#Experience" class ="nav-link">Experience</a>
+                  <a href="#Skills" class ="nav-link">Skills</a>
+                  <a href="#Contact" class ="nav-link">Contact</a>
+            </div>
+          </div>
+    </nav>
+    </header>
+
+   
+
+    <!--About Me-->
+    <div id ="About">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="AboutData">
+              <div class ="card bg-white">
+                <div class="card-title my-5">
+                  <div class="media">
+                    <img src="../Images/pro1.jpg" width= "250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block">
+                    <div class="media-body">
+                        <h3 class="display-4 ml-5">I'm Jake Byford</h3>
+                        <p class="text-muted ml-5">Programmer, Blogger, Investor</p>
+                        <div class="container">
+                            <table class="table table-responsive ml-4">
+                                <tr>
+                                  <td class="text-muted">Age</td>
+                                  <td>:</td>
+                                  <td>26 Years Old</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Email</td>
+                                  <td>:</td>
+                                  <td>jake_byford@outlook.com</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Location</td>
+                                  <td>:</td>
+                                  <td>New Jersey</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Phone</td>
+                                  <td>:</td>
+                                  <td>+1 732 861 7994</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-danger">
+                  <a href="https://www.facebook.com/profile.php?id=100008382634587" target="_blank"><i class="fab fa-facebook fa-2x mx-3"></i></a>
+                  <a href="https://twitter.com/JakeByford3" target="_blank"><i class="fab fa-twitter fa-2x mx-3"></i></a>
+                  <a href="https://github.com/jakebyford" target="_blank"><i class="fab fa-github fa-2x mx-3"></i></a>
+                  <a href="https://www.instagram.com/boolean_dev/" target="_blank"><i class="fab fa-instagram fa-2x mx-3"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class ="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <span class="bg-danger text-white" style="padding: 10px 20px 10px 20px;">About Me</span><hr class="bg-danger" style="border-width: 2px;" style="margin-top: 6px;">
+                    <div class="card bg-white skills-card">
+                    <section class="lead text-justify">
+                    <div id="quote1">
+                      <br>
+                      <p>“Sometimes it is the very people who no one imagines anything of
+                       who do the things no one can imagine.”</p>
+                        - <em>Alan Turing</em>
+                    </div>
+                    <br>
+
+                    <div class ="a">
+                      <p>
+
+                      <!--Follow these guidelines to learn strategic management, an essential optimization tool to gain and sustain your wealth in the 21 century. 
+                          Click here to listen to my views about Business in the 21st Century.
+                          Click here to enter a raffle to win an exclusive card signed by SuperBowl Champion, MVP, and Rookie of the Year, Patrick Mahomes. 
+                          Raffle ends December 31st, 2020. Fees do apply. Must enter contest to win. Contest rules do apply. -->
+
+                      The vision for my journey was inspired by my mother, a healthcare employee who worked as a mammography technician in 
+                      New Jersey. Raised on the law of attraction, my mom taught me to have the conscious ability to build beautiful ideas, 
+                      live in harmony through positive energy, and attract the good that I desire.
+                      </p>
+                      <p>
+                      When I was 13 years old, the struggles from the 2009 United States financial crisis ultimately aligned my need for 
+                      financial knowledge. During my time as a student, I witnessed firsthand the struggle my family had in choosing between
+                      saving and spending money. The desire to provide for my family ignited a passion within me, and with some guidance, 
+                      I decided to study Finance. Years later, working two jobs, I virtually graduated Magna Cum Laude from Kean University 
+                      in Union, New Jersey, obtaining my Bachelor’s Degree in Finance May 29th, 2020. Although graduating in the midst of a 
+                      global pandemic, the dismal job market triggered an idea I once had, stemming from advice given to me a year prior 
+                      from a head executive. I quickly decided to take advantage of this stay-at-home order and enroll in a Data Science 
+                      Bootcamp through Rutgers University to further invest in my knowledge.
+                      </p>
+                      <p>
+                      Since 2018, I have grown organically and exponentially becoming one of the best FinTech candidates to enter the 
+                      current job market. My entrepreneurial achievements are being recognized and my success stands as inspiration for 
+                      others to take risks in pursuit of their passion. Focusing on operating with quality and integrity, one of my near 
+                      future ambitions is to develop a “virtual financial analyst” interface capable of autonomously scraping company 
+                      financial data and updating ratios to predict better investment decisions. Let’s connect! Reach out to me. 
+                      </p>
+                    </div>
+                    <div class="sincerely">
+                      <p>
+                        <strong><em>Let’s get to work.</em></strong>
+                      </p>
+                      <p>
+                        <em>Sincerely,</em>
+                      </p>
+                      <p>
+                        <em>Jake Byford</em>
+                      </p>
+                    </div>
+                    </section>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Education -->
+      <div id="Education">
+        <div class="container mt-5">
+            <span class="bg-success text-white" style="padding: 10px 20px 10px 20px;">Education</span><hr class="bg-success" style="border-width: 2px;" style="margin-top: 6px;">
+            <div class="row">
+                <div class="col-lg-6 mt-3">
+                    <div class="card bg-white"><span class="border-top border-danger"></span>
+                        <img src="../Images/rutgers.png" width ="200" height="80" class="img-fluid m-auto py-3">
+                        <h3 class="text-center text-danger">Data Science Graduate</h3>
+                        <p class="text-center lead text-justify p-3">
+                          June 2020 - November 2020<br>
+                          Data Visualization and Manipulation Certificate <br>
+                          (Projects Below in Slideshow)
+                        </p>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-lg-6 mt-3">
+                        <div class="card bg-white"><span class="border-top border-danger"></span>
+                            <img src="../Images/kean.png" width ="200" height="30" class="img-fluid m-auto py-3">
+                            <h3 class="text-center text-primary p-1">Bachelor’s in Finance</h3>
+                            <p class="text-center lead text-justify p-3">
+                              May 2018 - May 2020 <br>
+                              Lambda Alpha Sigma Academic Honor Society <br>
+                              Magna Cum Laude (GPA: 3.7)
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Experience -->
+    <div id="Experience">
+        <div class="container mt-5">
+            <span class="bg-dark text-white" style="padding: 10px 20px 10px 20px;">Experience</span><hr class="bg-dark" style="border-width: 2px;" style="margin-top: 6px;">
+            <div class="row">
+                <div class="col-lg-6 mt-3">
+                    <div class="card bg-white"><span class="border-top border-danger"></span>
+                        <img src="../Images/census.png" width ="200" height="80" class="img-fluid m-auto py-3">
+                        <h3 class="text-center text-danger">I'm Census Enumerator</h3>
+                        <p class="lead text-justify p-3">
+                          Performed the momentous task of counting the United States population in the State of New Jersey. 
+                          During this undertaking role, walking door to door, I interviewed 200+ households a week updating address lists.
+                          Benefiting from this important information, my community now has a better understanding of what new projects should be implemented
+                          (eg.: schools, businesses, hospitals, etc).
+                          Recently, I completed a project in a team of five using past Census data to determine what 
+                          demographic factors had an impact from COVID-19 in the United States. 
+                          Click <a href="https://github.com/jakebyford/covid19-project/blob/master/Images/README.md" target="_blank"><strong>HERE</strong></a> to check it out on my Github !
+                          
+                          </p>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-lg-6 mt-3">
+                        <div class="card bg-white"><span class="border-top border-danger"></span>
+                            <img src="../Images/j_hewitt.jpg" width ="200" height="80" class="img-fluid m-auto py-3">
+                            <h3 class="text-center text-danger p-1">I'm Tax Professional</h3>
+                            <p class="lead text-justify p-3">I fell in love with finance after seeing my parents go through
+                            financial hardships during the <em>Great Recession</em> of 2008. This lead me to get a degree in finance, 
+                            and I've now worked in the field for almost six years. Working as a Tax Professional gave me hands on experience 
+                            preparing people's tax returns while generating the most money for their tax refunds. Learning as a Tax Professional gave me an 
+                            oppurtunity to give future tax advice as well as recognize the quality of earnings before making an investment decision. 
+                            I am now looking for oppurtunities with other large financial organizations. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Skill-->
+    <div id="Skills" class="mt-5">
+      <div class="container">
+          <span class="bg-primary text-white" style="padding: 10px 20px 10px 20px;">My Skills</span><hr class="bg-primary" style="border-width: 2px;" style="margin-top: 6px;">
+          <div class="row">
+              <div class ="col">
+                  <div class="card bg-white skills-card">
+                        <h3 class="ml-3 my-3">Fundamental Analysis (Financial)</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width: 100%">100%</div>
+                        </div>
+
+                        <h3 class="ml-3 my-3">HTML5 Language</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:99%">99%</div>
+                        </div>
+                        
+                        <h3 class="ml-3 my-3">CSS3 Language</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width: 99%">99%</div>
+                        </div>
+
+                        <h3 class="ml-3 my-3">JavaScript Programming</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:93%">93%</div>
+                        </div>
+
+                        <h3 class="ml-3 my-3">Python</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:99%">99%</div>
+                        </div>
+
+                        <h3 class="ml-3 my-3">SQL (mySQL, postgreSQL)</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:95%">95%</div>
+                        </div>
+                        <h3 class="ml-3 my-3">noSQL</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-primary" style="width:90%">90%</div>
+                        </div>
+                        <h3 class="ml-3 my-3">Machine Learning (Scikit Learn, TensorFlow)</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-primary" style="width:88%">88%</div>
+                        </div>
+                        <h3 class="ml-3 my-3">Flask</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-primary" style="width:93%">93%</div>
+                        </div>
+                        <h3 class="ml-3 my-3">Git</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:95%">95%</div>
+                        </div>
+                        <h3 class="ml-3 my-3">Tableau</h3>
+                        <div class="progress mx-3">
+                            <div class= "progress-bar bg-success" style="width:99%">99%</div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="min-height: 60vh;">
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel"
+              data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel"
+              data-slide-to="1"></li>
+              <li data-target="#myCarousel"
+              data-slide-to="2"></li>
+              <li data-target="#myCarousel"
+              data-slide-to="3"></li>
+          </ol>
+              <div class="carousel-inner" style="min-height: 60vh;">
+                    <div class="carousel-item active" >
+                        <div class = "container Slideshow">
+                            <h1>My Projects</h1>
+                            <p>Slide through my most recent projects.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="overlay-image"
+                      style="background-image: url(../Images/sp500ThirdQ.png);"></div>
+                      <div class = "container">
+                        <h1>S&P 500 Analysis</h1>
+                        <p>Check out what stocks and sectors are doing the best as of September 1, 2020.</p>
+                        <a href ="https://jakebyford.github.io/sp500/S_&_P_ETL_Pandas/Solved/index.html" target="_blank" class="btn btn-lg btn-primary">
+                                Click Here
+                        </a>
+                      </div>
+                  </div>
+                    <div class="carousel-item">
+                        <div class="overlay-image"
+                        style="background-image: url(../Images/slide-2.jpg);"></div>
+                        <div class = "container">
+                            <h1>COVID-19 Tracking Analysis</h1>
+                            <p>Check out what demographics trend toward the spread of COVID until the end of July. </p>
+                            <a href ="https://github.com/jakebyford/covid19-project/blob/master/Images/README.md" target="_blank" class="btn btn-lg btn-primary">
+                                    Click Here
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay-image"
+                        style="background-image: url(../Images/slide-3.png);"></div>
+                        <div class = "container">
+                            <h1>2019 New Jersey Traffic Analysis</h1>
+                            <p>Check out which counties had more accidents,
+                              the effect weather played, and a complete table 
+                              filled with accident data.</p>
+                            <a href ="https://jakebyford.github.io/traffic-challenge/html/index.html" target="_blank" class="btn btn-lg btn-primary">
+                                    Click Here
+                            </a>
+                        </div>
+                    </div>
+              </div>
+              <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                  <span class="sr-only">Previous</span>
+                  <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+              </a>
+              <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                  <span class="sr-only">Previous</span>
+                  <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+              </a>
+    </div>
+
+
+    <!--Contact-->
+    <div id="Contact">
+        <div class="container mt-5">
+            <span class="bg-info text-white" style="padding: 10px 20px 10px 20px;">Contact Me</span> <hr class="bg-info" style="border-width: 2px;" style="margin-top: 6px;">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-white">
+                        <div class="card-header">
+                            <h4 class="my-4">Contact Me Below</h4>
+                            <form method="post" autocomplete="off" name="google-sheet">
+                            <div class="form-group">
+                              <input type="text" name="Name" placeholder="Your Name *" class="form-control" value="" required=""/>
+                            </div>
+
+                            <div class="form-group">
+                              <input type="text" name="Email" placeholder="Email *" class="form-control" value="" required=""/>
+                            </div>
+
+                            <div class="form-group">
+                              <input type="number" name="Phone" placeholder="Phone Number *" class="form-control" value="" required=""/>
+                            </div>
+
+                            <div class="form-group">
+                              <textarea type="text" name="Message"  class="form-control" placeholder="Enter Message"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-success text-white">Submit Now</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwxLEdzaidHNN_RuVKR4pRaU2F-AICjH52LvznijR8jz1XHPycB/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting Us! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div id="Visits">
+      <div class="container mt-5">
+          <span class="bg-secondary text-white" style="padding: 10px 20px 10px 20px;">Page Visits</span> <hr class="bg-secondary" style="border-width: 2px;" style="margin-top: 6px;">
+          <div class="row">
+              <div class="col">
+                  <div class="card bg-white">
+                      <div class="card-header">
+                          <h4 class="my-4">Page Visits</h4>
+                            <div><a href='http://www.freevisitorcounters.com'>free counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=bc30ea1004407508e3f8ae8dc5917b1710414059'></script>
+                              <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/753479/t/5"></script>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <!--Footer-->
+    <div class="footer container-fluid bg-dark">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                  <p class="text-white pt-2 text-center">Web Design By: Jake Byford - September 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
