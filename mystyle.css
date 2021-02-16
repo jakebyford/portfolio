@@ -53,10 +53,12 @@ div .a {
 
 #quote2 p {
   text-align: center;
+  font-size: 20px;
 }
 
 div .sincerely {
   padding: 10px 20px 10px 20px;
+  text-align: center;
 }
 
 #Skills span {
