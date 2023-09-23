@@ -32,6 +32,26 @@ body {
 #About .fab {
   color: white;
 }
+/* Add this CSS in your existing styles.css file */
+/* Default font sizes */
+.a p {
+  font-size: 18px;
+}
+
+.quote-carousel .quote {
+  font-size: 24px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.a p {
+  font-size: 16px; /* Adjust the font size for paragraph text on smaller screens */
+}
+
+.quote-carousel .quote {
+  font-size: 18px; /* Adjust the font size for quotes on smaller screens */
+}
+}
 
 div .a {
   padding: 10px 20px 10px 20px;
