@@ -38,6 +38,11 @@ body {
   font-size: 18px;
 }
 
+.quote-container {
+  max-height: 280px; /* Set a max height for the container */
+   /* Add vertical scrollbar if necessary */
+}
+
 .quote-carousel .quote {
   font-size: 24px;
 }
@@ -65,10 +70,19 @@ div .a {
   font-size: 36px;
 } */
 
+.row {
+  flex-wrap: nowrap; /* Prevent wrapping of flex items */
+}
+
+.card.bg-white.skills-card {
+  display: block;
+} 
 
 /* styles.css */
 .quote-carousel {
   padding: 60px;
+  width: 800px; /* Adjust the width as needed */
+  height: 360px; /* Adjust the height as needed */
   max-width: 100%; /* Set the maximum width for the carousel */
   margin: 0 auto; /* Center the carousel on the page */
   overflow: hidden; /* Hide overflowing content */
