@@ -60,6 +60,7 @@
             <div class="navbar-nav ml-auto">
                   <a href="#About" class ="nav-link">About Me</a>
                   <a href="#Education" class ="nav-link">Education</a>
+                  <a href="#Resume" class ="nav-link">Resume</a>
                   <!-- <a href="#Experience" class ="nav-link">Experience</a> -->
                   <!-- <a href="#Skills" class ="nav-link">Skills</a> -->
                   <a href="#Contact" class ="nav-link">Contact</a>
@@ -75,6 +76,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <span class="bg-danger text-white" style="padding: 10px 20px 10px 20px;">About Me</span><hr class="bg-danger" style="border-width: 2px;" style="margin-top: 6px;">
             <div id="AboutData">
               <div class ="card bg-white">
                 <div class="card-title my-5">
@@ -125,16 +127,25 @@
         <div class ="container mt-5">
             <div class="row">
                 <div class="col">
-                    <span class="bg-danger text-white" style="padding: 10px 20px 10px 20px;">About Me</span><hr class="bg-danger" style="border-width: 2px;" style="margin-top: 6px;">
                     <div class="card bg-white skills-card">
                     <section class="lead text-justify">
-                    <div id="quote1">
+                      <div class="quote-carousel">
+                        <p class="quote">“Sometimes it is the very people who no one imagines anything of
+                          who do the things no one can imagine.” - <em>Alan Turing</em></p>
+                        <p class="quote">"Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young" 
+                          - <em>Henry Ford</em></p>
+                        <p class="quote">"Before anything else, preparation is the key to success." 
+                          - <em>Alexander Graham Bell</em></p>
+                        <script src="script.js"></script>
+                        <!-- Add more quotes as needed -->
+                    </div>
+                    <!-- <div id="quote1">
                       <br>
                       <p>“Sometimes it is the very people who no one imagines anything of
                        who do the things no one can imagine.”</p>
-                        - <em>Alan Turing</em>
-                    </div>
-                    <br>
+                        - <em>Alexander Graham Bell</em>
+                    </div> -->
+                    <!-- <br> -->
 
                     <div class ="a">
                       <p>
@@ -148,15 +159,17 @@
                         and tools commonly used in data science. He has professional experience working at <strong>edX</strong>, 
                         where they provide academic support and research solutions for students.
 
-                        Jake has completed several personal projects, including developing a <a href="https://starbucks-drinks.herokuapp.com/survey">Starbucks coffee recommendation system</a> using KNN, 
+                        Jake has completed several personal projects, including developing a <a href="https://starbucks-drinks.herokuapp.com/survey">Starbucks coffee recommendation system</a>, 
                         building a LinkedIn web scraper, creating an automated web crawler for <a href="https://github.com/jakebyford/TD_Ameritrade_Financial_Scraping">TD Ameritrade</a>, and conducts data analysis on all of his projects. 
-                        In his free time, he continues to learn and wishes to do research further in the area of data science specifically neaural networks and AI technology.
+                        In his free time, he continues to learn and wishes to do research further in the area of data science specifically neural networks and AI technology.
 
                         Overall, he is confident in his ability to contribute to any data-driven team and bring a valuable skill set and experience to the table. </p>
                       <p>  
-                        If you want to contact him you can fill out the 
-                        <a href="#Contact"><strong>Contact Form</strong></a> or you can contact him directly through 
-                        his <a href="#About"><strong>About Me</strong></a> information. 
+                        Discover his <a href="#Resume"><strong>resume</strong></a>, 
+                        and if you'd like to reach out, feel free to use the 
+                        <a href="#Contact"><strong>contact form</strong></a> or 
+                        find his contact details in the <a href="#About"><strong>About Me</strong></a> 
+                        section or resume.
                       </p>
                     </div>
                     <!-- <div class="sincerely">
@@ -223,6 +236,29 @@
         </div>
     </div>
 
+        <!--Resume-->
+        <div id ="Resume">
+          <div class="container mt-5">
+            <span class="bg-secondary text-white" style="padding: 10px 20px 10px 20px;">Resume</span><hr class="bg-secondary" style="border-width: 2px;" style="margin-top: 6px;">
+            <div class="row">
+              <div class="col">
+              <!-- Add a button to view the PDF in a new tab -->
+              <button class="view-resume-button" onclick="viewResume()">View Resume (PDF)</button>
+              
+              <script>
+                  // Function to open the PDF in a new tab
+                  function viewResume() {
+                      // Replace 'resume.pdf' with the actual URL of your PDF
+                      var pdfUrl = "https://docs.google.com/document/d/1j39uoHe6-7NJWeNCy8rosno0l6E0Nk8fM1KxusclavU/edit?usp=sharing";
+                      
+                      // Open the PDF in a new tab
+                      window.open(pdfUrl, "_blank");
+                  }
+              </script>
+              </div>
+          </div>
+          </div>
+        </div>
     <!-- <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="min-height: 60vh;">
           <ol class="carousel-indicators">
               <li data-target="#myCarousel"

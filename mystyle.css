@@ -38,23 +38,37 @@ div .a {
   text-indent: 50px;
   text-align: justify;
 }
-
-#quote1 {
+/* 
+#quote1 p {
   padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 36px;
+} */
+
+
+/* styles.css */
+.quote-carousel {
+  padding: 60px;
+  max-width: 100%; /* Set the maximum width for the carousel */
+  margin: 0 auto; /* Center the carousel on the page */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.quote {
+  display: none; /* Hide all quotes initially */
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
   text-align: center;
   font-size: 36px;
 }
 
-#quote1 p {
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-  font-size: 42px;
+/* Style for the active quote */
+.quote.active {
+  display: block;
 }
 
-#quote2 p {
-  text-align: center;
-  font-size: 20px;
-}
+
 
 div .sincerely {
   padding: 10px 20px 10px 20px;
@@ -98,6 +112,32 @@ div .sincerely {
 #Experience .card {
   border-top: 03px solid red;
 }
+
+#Resume span {
+  padding: 10px 20px 10px 20px;
+}
+
+#Resume hr {
+  border-width: 3px;
+  margin-top: 6px;
+}
+
+#Resume .card {
+  border-top: 03px solid red;
+}
+
+/* styles.css */
+.view-resume-button {
+  font-size: 24px; /* Increase the font size to make the button bigger */
+  padding: 15px 30px; /* Add padding for a larger button */
+  background-color: dodgerblue; /* Change the background color to Dodger Blue */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+}
+
+
 #Contact span {
   padding: 10px 20px 10px 20px;
 }
