@@ -24,3 +24,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Automatically advance to the next quote every 3 seconds (adjust as needed)
     setInterval(nextQuote, 10000);
 });
+
+// script.js
+// document.addEventListener("DOMContentLoaded", function () {
+//     const navbar = document.querySelector(".navbar");
+//     const scrollClass = "collapse";
+
+//     function toggleNavbarCollapse() {
+//         if (window.innerWidth <= 768) { // Add a media query for mobile screens
+//             if (window.scrollY > 0) { // Check if the user has scrolled
+//                 navbar.classList.add(scrollClass);
+//             } else {
+//                 navbar.classList.remove(scrollClass);
+//             }
+//         } else {
+//             // On larger screens, keep the navbar expanded
+//             navbar.classList.remove(scrollClass);
+//         }
+//     }
+
+//     toggleNavbarCollapse();
+
+//     window.addEventListener("scroll", toggleNavbarCollapse);
+//     window.addEventListener("resize", toggleNavbarCollapse); // Handle screen size changes
+// });
+
