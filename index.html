@@ -62,7 +62,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
               <a href="#About" class="nav-link">About Me</a>
-              <a href="#Education" class="nav-link">Education</a>
+              <!-- <a href="#Education" class="nav-link">Education</a> -->
               <a href="#Resume" class="nav-link">Resume</a>
               <!-- <a href="#Contact" class="nav-link">Contact</a> -->
           </div>
@@ -85,7 +85,7 @@
                   <div class="media">
                     <img src="Images/pro1.jpg" width= "250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block">
                     <div class="media-body">
-                        <h3 class="display-4 ml-5">I'm Jake Byford</h3>
+                        <h3 class="display-4 ml-5">Jake Byford</h3>
                         <p class="text-muted ml-5">Programmer, Data Science Enthusiast, Investor</p>
                         <div class="container">
                             <table class="table table-responsive ml-4">
@@ -119,7 +119,8 @@
                   <a href="https://www.instagram.com/boolean_dev/" target="_blank"><i class="fab fa-instagram fa-2x mx-3"></i></a>
                   <a href="https://github.com/jakebyford" target="_blank"><i class="fab fa-github fa-2x mx-3"></i></a>
                   <a href="https://www.linkedin.com/in/jake-byford-034406a2/" target="_blank"><i class="fab fa-linkedin fa-2x mx-3"></i></a>
-                </div>
+                  <a href="https://medium.com/@byfordjake1" target="_blank"><i class="fab fa-medium fa-2x mx-3"></i></a>
+                </div>                
               </div>
             </div>
           </div>
@@ -158,27 +159,27 @@
                     <section class="lead text-justify">
                     <div class ="a">
                       <p>
-                        Jake is a current Master's student in Data Science with a strong passion for the field and a 
+                        Jake is a recent Data Science Master's Graduate with a strong passion for the field and a 
                         desire to learn and take on new challenges. He has experience in programming languages like 
-                        <strong>Python, SQL, R, and Java</strong> and is pursuing his Master's degree at the New Jersey Institute of Technology 
-                        with a focus on Statistics. He is also the President of the Data Science Club at the university. 
-                        Additionally, he holds a Bachelor's degree in Finance and a Certificate in Data Science from other institutions.
-
+                        <strong>Python, SQL, R, and Java</strong> and is completed his Master's degree at the New Jersey Institute of Technology 
+                        with a focus on Statistics. During his tenure at NJIT he was also the President and Treasurer of the Data Science Club. 
+                        Additionally, he holds a Bachelor's degree in Finance and professional certifications from Rutger's and CompTIA in Data Science.
+                      </p>
+                      <p>
                         His skill set includes a wide range of technical and soft skills, and he is proficient in various technologies 
                         and tools commonly used in data science. He has professional experience working at <strong>edX</strong>, 
                         where they provide academic support and research solutions for students.
-
                         Jake has completed several personal projects, including developing a <a href="https://starbucks-drinks.herokuapp.com/survey">Starbucks coffee recommendation system</a>, 
                         building a LinkedIn web scraper, creating an automated web crawler for <a href="https://github.com/jakebyford/TD_Ameritrade_Financial_Scraping">TD Ameritrade</a>, and conducts data analysis on all of his projects. 
                         In his free time, he continues to learn and wishes to do research further in the area of data science specifically neural networks and AI technology.
-
-                        Overall, he is confident in his ability to contribute to any data-driven team and bring a valuable skill set and experience to the table. </p>
-                      <p>  
+                      </p>
+                        Overall, he is confident in his ability to contribute to any data-driven team and bring a valuable skill set and experience to the table. You can view or optionally download Jake's resume by clicking the button at the bottom of this webpage.</p>
+                      <!-- <p>  
                         Discover his <a href="#Resume"><strong>resume</strong></a> at the bottom of this page, 
                         and if you'd like to reach out, feel free to 
                         find his contact details in the <a href="#About"><strong>About Me</strong></a> 
                         section or resume.
-                      </p>
+                      </p> -->
                     </div>
                     <!-- <div class="sincerely">
                       <p>
@@ -200,7 +201,7 @@
         <script src="script.js"></script>
 
       <!-- Education -->
-      <div id="Education">
+      <!-- <div id="Education">
         <div class="container mt-5">
             <span class="bg-success text-white" style="padding: 10px 20px 10px 20px;">Education</span><hr class="bg-success" style="border-width: 2px;" style="margin-top: 6px;">
             <div class="row">
@@ -211,7 +212,7 @@
                     <p class="text-center lead text-justify p-3">
                       January 2021 - December 2023 <br>
                       Data Science Club - President <br>
-                      GPA: 3.67
+                      GPA: 3.75
                     </p>
                 </div>
               </div>  
@@ -222,11 +223,11 @@
                         <h3 class="text-center text-danger">Data Science</h3>
                         <p class="text-center lead text-justify p-3">
                           June 2020 - November 2020<br>
-                          Data Science and Visualization Certificate <br>
+                          Data Science Certificate <br>
                           <a href="https://github.com/jakebyford">Github</a>
                         </p>
                     </div>
-                </div>
+              </div>
 
 
                 
@@ -242,17 +243,42 @@
                         </div>
                 </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div> -->
 
         <!--Resume-->
-        <div id ="Resume">
+        <div id="Resume">
+          <div class="container mt-5">
+            <span class="bg-secondary text-white" style="padding: 10px 20px 10px 20px;">Resume</span>
+            <hr class="bg-secondary" style="border-width: 2px; margin-top: 6px;">
+            <div class="row">
+              <div class="col">
+                <!-- Add a button to view the PDF in a new tab -->
+                <button class="view-resume-button" onclick="viewResume()">View Resume</button>
+                
+                <!-- Add the PDF viewer using the embed tag -->
+                <div id="pdf-viewer-container" style="display: none;">
+                  <embed id="pdf-viewer" src="resume_JakeByford_Tex.pdf#view=Fit" type="application/pdf" width="100%" height="600px" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script>
+          function viewResume() {
+            // Show the PDF viewer container when the button is clicked
+            document.getElementById('pdf-viewer-container').style.display = 'block';
+          }
+        </script>
+        
+        <!-- <div id ="Resume">
           <div class="container mt-5">
             <span class="bg-secondary text-white" style="padding: 10px 20px 10px 20px;">Resume</span><hr class="bg-secondary" style="border-width: 2px;" style="margin-top: 6px;">
             <div class="row">
               <div class="col">
-              <!-- Add a button to view the PDF in a new tab -->
-              <button class="view-resume-button" onclick="viewResume()">View Resume (PDF)</button>
+               Add a button to view the PDF in a new tab -->
+              <!-- <button class="view-resume-button" onclick="viewResume()">View Resume (PDF)</button>
               
               <script>
                   // Function to open the PDF in a new tab
@@ -267,7 +293,7 @@
               </div>
           </div>
           </div>
-        </div>
+        </div> -->
     <!-- <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="min-height: 60vh;">
           <ol class="carousel-indicators">
               <li data-target="#myCarousel"
@@ -414,7 +440,7 @@
         <div class="row">
             <div class="col">
                 <div class="container">
-                  <p class="text-white pt-2 text-center">Web Design By: Jake Byford</p>
+                  <!-- <p class="text-white pt-2 text-center">Web Design By: Jake Byford</p> -->
                 </div>
             </div>
         </div>
