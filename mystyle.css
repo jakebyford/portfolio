@@ -5,11 +5,6 @@
     background-repeat: no-repeat;
   }
 }
-#pdf-viewer-container {
-  position: relative; /* Ensure it positions relative to its container */
-  z-index: 1000; /* Ensure it appears above other elements */
-  background-color: white; /* Optional: Set background color to white */
-}
 
 
 

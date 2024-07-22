@@ -276,10 +276,28 @@
           </div>
         </div>
         
-        <script>
+        <!-- <script>
           function viewResume() {
             // Show the PDF viewer container when the button is clicked
             document.getElementById('pdf-viewer-container').style.display = 'block';
+          }
+        </script> -->
+
+
+
+        <script>
+          function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+          }
+
+          function viewResume() {
+            if (isMobileDevice()) {
+              // Open the PDF in a new tab for mobile devices
+              window.open('resume_JakeByford_Tex.pdf#view=Fit', '_blank');
+            } else {
+              // Show the PDF viewer container for non-mobile devices
+              document.getElementById('pdf-viewer-container').style.display = 'block';
+            }
           }
         </script>
         
