@@ -99,7 +99,7 @@
                                 <tr>
                                   <td class="text-muted">Age</td>
                                   <td>:</td>
-                                  <td>28 Years Old</td>
+                                  <td id="age">Calculating...</td>
                                 </tr>
                                 <tr>
                                   <td class="text-muted">Email</td>
@@ -121,6 +121,28 @@
                     </div>
                   </div>
                 </div>
+
+                <script>
+                  function updateAge() {
+                    const birthDate = new Date('1994-09-15T23:04:00');
+                    const now = new Date();
+                    const ageInSeconds = Math.floor((now - birthDate) / 1000);
+
+                    const years = Math.floor(ageInSeconds / (365.25 * 24 * 3600));
+                    const days = Math.floor((ageInSeconds % (365.25 * 24 * 3600)) / (24 * 3600));
+                    const hours = Math.floor((ageInSeconds % (24 * 3600)) / 3600);
+                    const minutes = Math.floor((ageInSeconds % 3600) / 60);
+                    const seconds = ageInSeconds % 60;
+
+                    document.getElementById('age').textContent = 
+                      `${years} Years ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds Old`;
+                  }
+
+                  // Update age every second
+                  setInterval(updateAge, 1000);
+                  // Initial update
+                  updateAge();
+                </script>
                 <div class="card-footer bg-danger">
                   <a href="https://www.facebook.com/profile.php?id=100008382634587" target="_blank"><i class="fab fa-facebook fa-2x mx-3"></i></a>
                   <a href="https://www.instagram.com/boolean_dev/" target="_blank"><i class="fab fa-instagram fa-2x mx-3"></i></a>
